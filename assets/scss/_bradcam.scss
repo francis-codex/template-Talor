@@ -1,0 +1,28 @@
+
+// breadcrumb
+.page-notification {
+	background: #EFF5F8;
+    padding: 13px 0;
+    margin-bottom: 45px;
+}
+.breadcrumb {
+    background: none;
+    padding: 0;
+    margin: 0;
+    a {
+        color: #949EA5;
+        font-size: 15px;
+        text-transform: capitalize;
+        line-height: 1;
+        font-weight: 400;
+    }
+}
+.breadcrumb-item + .breadcrumb-item::before {
+	display: inline-block;
+	color: #949EA5;
+	content: ">";
+	font-size: 17px;
+	line-height: 1;
+    padding: 0 4px;
+    padding-right: 8px;
+}

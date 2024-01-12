@@ -1,0 +1,99 @@
+.categories-area {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    @media #{$md}{
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    @media #{$sm}{
+        padding-top: 65px;
+        padding-bottom: 0px;
+    }
+    @media #{$xs}{
+        padding-top: 65px;
+        padding-bottom: px;
+    }
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 100%;
+        background: #fff;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        @media #{$laptop}{
+            width: 21px;
+        }
+        @media #{$lg}{
+            position: unset;
+        }
+        @media #{$md}{
+            position: unset;
+        }
+        @media #{$sm}{
+            position: unset;
+        }
+        @media #{$xs}{
+            position: unset;
+        }
+    }
+
+    .single-cat{
+        @include transition(.4s);
+        z-index: 1;
+        .cat-icon{
+            img{
+                margin-bottom: 26px;
+                display: block;
+            }
+        }
+        .cat-cap{
+            h5{
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 19px;
+                display: block;
+                text-transform: capitalize;
+                @media #{$lg}{
+                    font-size: 17px;
+                }
+                @media #{$sm}{
+                    font-size: 25px;
+                }
+                @media #{$xs}{
+                    font-size: 25px;
+                }
+            }
+            p{
+                color: #101A31;
+                font-size: 14px;
+                line-height: 1.9;
+                @media #{$sm}{
+                    font-size: 15px;
+
+                }
+            }
+            a{
+                color: #1c165c;
+                font-size: 16px;
+                font-weight: 600;
+                @include transition(.2s);
+            }
+        }
+
+
+        // Hover Effect In single 
+        &:hover{
+            .cat-cap{
+                h5{
+                    color: #000;
+                }
+
+            }
+       }
+    }
+}
+
+ 

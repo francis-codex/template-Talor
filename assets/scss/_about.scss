@@ -1,0 +1,392 @@
+
+
+// ! About Top section
+
+.about-area{
+    display: flex;
+    align-items: center;
+    @media #{$md}{
+      display: block;
+    }
+    @media #{$xs}{
+      display: block;
+    }
+    @media #{$sm}{
+      display: block;
+    }
+    // left img
+	.about-img{
+		background-image: url(../img/gallery/about-img1.png);
+		background-size: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		// background-position: center center;
+		height: 700px;
+		width: 50%;
+
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: end;
+			-ms-flex-pack: end;
+				justify-content: end;
+		-webkit-box-align: end;
+			-ms-flex-align: end;
+				align-items: end;
+
+		@media #{$xs}{
+		width: 100%;
+		height: 500px;
+		}
+		@media #{$sm}{
+			width: 100%;
+			height: 550px;
+		}
+		@media #{$md}{
+			width: 100%;
+			height: 600px;
+		}
+		
+    }
+    
+    // 	Right  Contents
+    .about-details{
+		// background-image: url(../img/gallery/section_bg02.png);
+		background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 700px;
+        width: 50%;
+		padding: 120px 75px;
+		display: flex;
+		align-items: center;
+
+        @media #{$lg}{
+            padding: 20px 20px 20px 50px;
+        }
+        @media #{$md}{
+            width: 100%;
+			padding: 50px 30px;
+			padding-bottom: 0;
+			height: 615px;
+        }
+        @media #{$sm}{
+            width: 100%;
+			padding: 50px 30px;
+			height: 615px;
+			padding-bottom: 0;
+        }
+        @media #{$xs}{
+            width: 100%;
+			padding: 50px 15px;
+			height: 755px;
+
+		}
+		.right-caption{
+			width: 69%;
+			@media #{$big_screen}{
+				width: 100%;
+			}
+			@media #{$lg}{
+				width: 100%;
+			}
+			@media #{$sm}{
+				width: 100%;
+			}
+			@media #{$xs}{
+				width: 100%;
+			}
+			.about-more{
+				 p.pera-top {
+					margin-bottom: 25px;
+				}
+				.pera-bottom{
+				}
+
+			}
+		}
+
+	}
+}
+//About Details page
+.about-details{
+	.about-details-cap{
+		h4{
+			font-size: 30px;
+			font-family: $font_1;
+			font-weight: 700;
+			margin-bottom:30px;
+			color:#000a2d;
+			display: inline-block;
+		}
+		p{
+			color: #464d65;
+			font-size: 16px;
+		}
+	}
+  }
+  .footer-tittles{
+	padding-top: 30px;
+	@media #{$xs}{
+		padding-top: 15px;
+	}
+	p{
+		padding-bottom: 22px;
+		color: #1D2547;
+		font-size: 16px;
+	}
+	h2{
+		font-size: 57px;
+		font-weight: 400;
+		font-size: 45px;
+		@media #{$xs}{
+			font-size: 45px;
+		  }
+		@media #{$xs}{
+			font-size: 33px;
+		  }
+	}
+  }
+
+
+// ! About Bottom  section 02
+.about-area2{
+	@include flexbox();
+    @include align-items(center);
+    @media #{$md}{
+      display: block;
+    }
+    @media #{$xs}{
+      display: block;
+    }
+    @media #{$sm}{
+      display: block;
+    }
+    // left img
+	.about-img2{
+		background-image: url(../img/gallery/about-img2.png);
+		background-size: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		// background-position: center center;
+		height: 700px;
+		width: 50%;
+		justify-content: center;
+		align-items: end;
+
+		@include flexbox();
+		@include justify-content(center);
+		@include align-items(flex-end);
+
+		@media #{$xs}{
+		width: 100%;
+		height: 500px;
+		}
+		@media #{$sm}{
+			width: 100%;
+			height: 550px;
+		}
+		@media #{$md}{
+			width: 100%;
+			height: 600px;
+		}
+		.info-man2{
+			background: #fff;
+			display: inline-block;
+			padding: 23px 36px;
+			border-radius: 20px;
+			margin-right: 10px;
+			box-shadow: 0 15px 25px rgba(253, 143, 95, 0.1);
+			margin-bottom: -50px;
+			@media #{$lg}{
+				padding: 23px 22px;
+			}	
+			@media #{$sm}{
+			}	
+			@media #{$xs}{
+			}	
+			.head-cap2{
+				display: flex;
+				margin-bottom: 15px;
+				@media #{$xs}{
+					margin-bottom: 9px;
+				}
+				img{
+					width: inherit;
+				}
+				h3{
+					color: $theme-color;
+					font-size: 40px;
+					font-weight: 600;
+					padding-left: 15px;
+					line-height: 32px;
+					@media #{$lg}{
+						font-size: 34px;
+					}
+				}
+			}
+			p{
+				color:#010A44;
+				margin: 0;
+				line-height: 1.5;
+				@media #{$lg}{
+					font-size: 13px;
+				}
+				@media #{$sm}{
+					font-size: 13px;
+				}
+				@media #{$xs}{
+					font-size: 13px;
+				}
+			}
+			&.info-man3 {
+				@media #{$xs}{
+					display: none !important;
+				}
+			}
+		}
+    }
+    
+    // 	Right  Contents
+    .about-details2{
+		height: 700px;
+		width: 50%;
+		padding: 85px 29px;
+		display: flex;
+		align-items: center;
+		padding-left: 20%;
+
+        @media #{$big_screen}{
+			padding-left: 8%;
+		}
+		
+        @media #{$lg}{
+			padding: 85px 29px;
+        }
+        @media #{$md}{
+            width: 100%;
+			padding: 50px 30px;
+			height: 591px;
+        }
+        @media #{$sm}{
+            width: 100%;
+			padding: 50px 30px;
+			height: 530px;
+        }
+        @media #{$xs}{
+			width: 100%;
+			padding: 50px 15px;
+			height: 548px;
+			padding-top: 0;
+		}
+		.right-caption2{
+			width: 90%;
+			@media #{$big_screen}{
+				width: 95%;
+			}
+			
+			@media #{$lg}{
+				width: 100%;
+			}
+			@media #{$sm}{
+				width: 100%;
+			}
+			@media #{$xs}{
+				width: 100%;
+			}
+			.about-more2{
+				 p.pera-top2 {
+					margin-bottom: 25px;
+				}
+				.pera-bottom2{
+				}
+
+			}
+		}
+
+	}
+}
+
+//About Details page
+.about-details2{
+	.about-details-cap2{
+		h4{
+			font-size: 30px;
+			font-family: $font_1;
+			font-weight: 700;
+			margin-bottom:30px;
+			color:#000a2d;
+			display: inline-block;
+		}
+		p{
+			color: #464d65;
+			font-size: 16px;
+		}
+	}
+  }
+
+
+
+
+
+
+
+
+
+  
+/* collapse */
+.collapse-wrapper{
+    .card {
+        border: 0em;
+        border-radius: 0;
+        // background: #fff;
+    }
+    .card:last-child {
+        margin-bottom: 0px;
+    }
+    .card-header {
+        padding: 0;
+        border-radius: 0;
+        background: none;
+        border: 0;
+        a {
+            font-size: 16px;
+            padding: 20px 15px 20px 41px;
+            color: #506072;
+            display: block;
+            text-decoration: none;
+            border-bottom: 1px solid #EFEFEF !important;
+
+            
+        }
+        a.btn-link {
+            color: $theme-color;
+        }
+        a.collapsed {
+            color: #010A44;
+        }
+        h2 {
+            a.collapsed::after {
+                content: "\e61a";
+                font-weight: 800;
+                color: $theme-color;
+            }
+            a::after {
+                position: absolute;
+                top: 22px;
+                font-size: 15px;
+                color: $theme-color;
+                left: 8px;
+                font-weight: 600;
+                
+                content: "\e622";
+                font-family: 'themify';
+            }
+        }
+    }
+    .card-body {
+        background: #fff;
+        padding: 20px 38px;
+    }
+}

@@ -1,0 +1,104 @@
+.team-area{
+    .single-team{
+        .team-img {
+            position: relative;
+            overflow: hidden;
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        .team-caption {
+            width: 100%;
+            padding-top: 30px;
+            @include transition(.4s);
+            h3 {
+                margin-bottom: 3px;
+                line-height: 13px;
+                font-family: $font_2;
+                a{
+                    color: #2c234d;
+                    font-weight: 600;
+                    font-size: 22px;
+                    margin-bottom: 12px;
+                    display: block;
+                    &:hover{
+                        color: $theme-color;
+                    }
+                }
+            }
+            p{
+                color:#2c234d;
+                font-size: 16px;
+                margin: 0;
+                padding: 0;
+            }
+
+        }
+        // Hover
+       &:hover {
+        .team-img {
+            // Effect
+            .team-social{
+                opacity: 1;
+                visibility: visible;
+                a{
+                    transform: translateY(6px);
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+           }
+       }
+    }
+}
+
+.team-social{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: rgba(1, 10, 68,.5);
+    padding: 15px;
+    border-radius: 10px;
+
+    opacity: 0;
+    visibility: hidden;
+    @include transition(.4s);
+
+    li{
+        display: inline-block;
+        a {
+            color: #fff;
+            font-size: 14px;
+            margin: 0 12px;
+            display: inline-block;
+            @include transition(.4s);
+            &:hover{
+                color: $theme-color;
+            }
+            i {
+                display: inline-block;
+            }
+
+            // Effect
+            transform: translateY(60px);
+            opacity: 1;
+            visibility: visible;
+
+        }
+        &:nth-child(1) a{
+            transition-delay: 0.0s;
+        }
+        &:nth-child(2) a{
+            transition-delay: 0.1s;
+        }
+        &:nth-child(3) a{
+            transition-delay: 0.2s;
+        }
+        &:nth-child(4) a{
+            transition-delay: 0.3s;
+        }
+    }
+}
